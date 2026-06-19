@@ -8,7 +8,7 @@ import java.util.UUID;
 @Service
 public class RTGSService {
     public RTGSResponse transfer(RTGSRequest request){
-        if(request.getAmount()<200000){
+        if(request.amount()<200000){
             return new RTGSResponse("RTGS amount should be >=2 Lakhs",null);
         }
         String txnid= UUID.randomUUID().toString();
