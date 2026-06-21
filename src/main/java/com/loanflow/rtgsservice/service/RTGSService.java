@@ -12,6 +12,6 @@ public class RTGSService {
             return new RTGSResponse("RTGS amount should be >=2 Lakhs",null);
         }
         String txnid= UUID.randomUUID().toString();
-        return new RTGSResponse("RTGS Transfer succesffully",txnid);
+        return new RTGSResponse("RTGS Transfer Succesffully",txnid);
     }
 }
